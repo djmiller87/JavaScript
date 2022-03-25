@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="navwrap">
+            <div id="navbar">
+                <div id="navhead">
+                    <h1>DojoWeather</h1>
+                </div>
+                <div id="navcities">
+                    <button id="burbank" class="city" type="button" onclick="loading(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)">Burbank</button>
+                    <button id="chicago" class="city" type="button" onclick="loading(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)">Chicago</button>
+                    <button id="dallas" class="city" type="button" onclick="loading(this)" onmouseover="mouseover(this)" onmouseout="mouseout(this)">Dallas</button>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="optionbar">
+                <div id="currentcity">
+                    <h2>San Jose</h2>
+                </div>
+                <div id="selector">
+                    <label for="tempoption">show tempature in</label>
+                    <select name="tempoption" id="tempoption" onchange="convert(this)">
+                        <option class="tempf">°F</option>
+                        <option class="tempc" >°C</option>
+                    </select>
+                </div>  
+            </div>
+            <div id="forcast">
+                <div class="day" id="today">
+                    <h3 class="h3">Today</h3>
+                    <img class="weather" src="./assets/some_rain.png" alt="some rain">
+                    <h4 class="h4">some rain</h4>
+                    <div class="high">
+                        <h5 id="temp1" class="h5h">24°</h5>
+                        <h5 id="temp2" class="h5l">18°</h5>
+                    </div>
+                </div>
+                <div class="day" id="tomorrow">
+                    <h3 class="h3">Tomorrow</h3>
+                    <img class="weather" src="./assets/some_sun.png" alt="some sun">
+                    <h4 class="h4">some sun</h4>
+                    <div class="high">
+                        <h5 id="temp3" class="h5h">27°</h5>
+                        <h5 id="temp4" class="h5l">19°</h5>
+                    </div>
+                </div>
+                <div class="day" id="friday">
+                    <h3 class="h3">Friday</h3>
+                    <img class="weather" src="./assets/some_clouds.png" alt="some clouds">
+                    <h4 class="h4">some clouds</h4>
+                    <div class="high">
+                        <h5 id="temp5" class="h5h">21°</h5>
+                        <h5 id="temp6" class="h5l">16°</h5>
+                    </div>
+                </div>
+                <div class="day" id="saturday">
+                    <h3 class="h3">Saturday</h3>
+                    <img class="weather" src="./assets/some_sun.png" alt="some sun">
+                    <h4 class="h4">some sun</h4>
+                    <div class="high">
+                        <h5 id="temp7" class="h5h">26°</h5>
+                        <h5 id="temp8" class="h5l">21°</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie">
+                <div id="cookiebody">
+                    <img src="./assets/cookie.png" alt="cookie">
+                </div>
+                <div>
+                    <p id="h6">Stop! Cookie time</p>
+                    <p class="pbody">We use cookies (sadly not the edible ones) to personalize
+                    content and ads, to provide social media features and to 
+                    analyse our traffic. <a id="link" href="https://en.wikipedia.org/wiki/HTTP_cookie">Read More...</a>
+                    </p>
+                </div>
+                <div class="iaccept">
+                    <button id="accept" onclick="remove('cookie')" onmouseover="mouseover(this)" onmouseout="mouseout(this)">I Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
+
