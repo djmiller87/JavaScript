@@ -14,11 +14,6 @@ function remove(id) {
     document.getElementById(id).remove();
 }
 
-// Copied and pasted the following functions from the solutions
-// because I had no idea how to do it. Although, after reading
-// the solution I do understand how it was done. Need to wrap my head 
-// around it more, but I understand what is going on when reading it.
-
 function c2f(temp) {
     return Math.round(9 / 5 * temp + 32);
 }
