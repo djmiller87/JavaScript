@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <div id="navbar">
+        <div id="dojonary">
+            <h1>Dojonary</h1>
+        </div>
+        <form action="nowhere" >
+            <input type="text" class="search" name="search" placeholder="  Search" size="45">
+        </form>
+        <div id="login">
+            <button onclick="login(this)" type="button" class="login">Login</button>
+        </div>
+    </div>
+    <div id="body">
+        <div id="colflex5">
+            <div class="ninjabox">
+                <div class="ninja1">
+                    <div class="ninja">
+                        <h2>ninja</h2>
+                    </div>
+                    <div class="noun">
+                        <h3>noun</h3>
+                    </div>
+                    <div class="plural">
+                        <p>Plural: <span class="italic">ninjas</span></p>
+                    </div>
+                    <div >
+                        <button onclick="alert('Ninja was liked')" type="button" class="likes">13 Likes</button>
+                    </div>
+                </div>
+                <div class="def">
+                    <p>A practitioner skilled in the</p>
+                    <p><a href="https://www.google.com/search?q=Japanese" target="_blank" class="japanese">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu"  target="_blank" class="ninjutsu">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="ninjabox">
+                <div class="ninja1">
+                    <div class="ninja">
+                        <h2>ninja</h2>
+                    </div>
+                    <div class="noun">
+                        <h3>noun</h3>
+                    </div>
+                    <div class="plural">
+                        <p>Plural: <span class="italic">ninjas</span></p>
+                    </div>
+                    <div >
+                        <button onclick="alert('Ninja was liked')" type="button" class="likes">37 Likes</button>
+                    </div>
+                </div>
+                <div class="def">
+                    <p>A <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank" class="programmer">programmer</a> who breaks</p>
+                    <p>down problems with <a href="https://en.wikipedia.org/wiki/Zen" target="_blank" class="zen">zen</a>-like</p>
+                    <p>focus</p>
+                </div>
+            </div>
+        </div>
+        <div id="colflex2">
+            <div id="dojobox">
+                <p>Dojonary is</p>
+                <p> defined by <span class="you">YOU</span></p>
+                <button onclick="remove(this)" type="button" class="adddef">Add Definition</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
