@@ -1,0 +1,25 @@
+#loops {
+    width: 2000px;
+    height: auto;
+    margin: auto;
+    display: block;
+    justify-content: center;
+}
+
+.challenges {
+    width: 500px;
+    height: 50px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: green;
+    background-color: black;
+}
+
+.challenges:hover {
+    border: 2px solid white;
+}
