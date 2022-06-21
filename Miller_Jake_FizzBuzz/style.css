@@ -1,0 +1,19 @@
+#fb {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#fizzbuzz {
+    width: 1000px;
+    height: 50px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: red;
+    background-color: black;
+}
+
+#fizzbuzz:hover {
+    border: 2px solid white;
+}
