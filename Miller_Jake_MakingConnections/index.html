@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        </div>
+        <div class="nav">
+            <div class="profile">
+                <h1 class="h1">Profile</h1>
+            </div>
+            <div class="navlinks">
+                <button class="navb">Home</button>
+                <button class="navb">My Profile</button>
+                <button class="navb">Find Connections</button>
+            </div>
+            <div class="signout">
+                <button class="so">Sign Out</button>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="col-1">
+                <div class="usercard">
+                    <div class="usertop">                        
+                        <img class="jane" src="./assets/jane-m.jpg" alt="Jane">
+                    </div>
+                    <div class="jd">
+                        <h2 id="h2">Jane Doe</h2>
+                    </div>
+                    <div class="location">
+                        <a href="https://www.google.com/maps/place/Seattle" target="_blank" class="imgmarker"><img src="./assets/map-marker.png" class="marker" alt="Location"><span class="seattle">Seattle</span></a>
+                    </div>
+                    <div class="line">
+                        <p class="skill">Developer | Engineer | Problem Solver</p>
+                    </div>
+                    <div class="line">
+                        <p class="skill">Masters of Shadows and the Internet</p>
+                    </div>
+                    <div class="line">
+                        <button onclick="namechange('h2')" class="imgedit" type="button"><img class="gear" src="./assets/gear.png" alt="Edit Profile">edit profile</button>
+                    </div>
+                </div> 
+                <div class="ed">
+                    <div class="edtop">
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <div class="edb">
+                        <p class="school">Coding Dojo - Full Stack Bootcamp</p>
+                        <p class="dates">Dec 2019 - March 2020</p>
+                        <p class="cert">Triple Black Belt in Python, Mern, and C#...</p>
+                    </div>
+                </div>           
+            </div>
+            <div class="col-2">
+                <div class="contactrequest">
+                    <div class="conrtop">
+                        <button class="contactnum">
+                            <span id="cnum">2</span><span class="trequest">Connection Requests</span>
+                        </button>
+                    </div>
+                    <div id="requestone" class="request">
+                        <button class="but1">
+                            <img src="./assets/todd-s.jpg" class="conimg" alt="Todd">
+                            <span class="name">Todd E</span>
+                        </button>
+                        <button onclick="remove('requestone');countadd('ctotal')" class="but2" type="button">
+                            <img src="./assets/accept-circle.png" class="accept" alt="Accept">
+                        </button>
+                        <button onclick="remove('requestone');countdown('cnum')" class="but3" type="button">
+                            <img src="./assets/close-circle.png" class="close" alt="Close">
+                        </button>
+                    </div>
+                    <div id="requesttwo" class="request">
+                        <button class="but1">
+                            <img src="./assets/phil-s.jpg" class="conimg" alt="Todd">
+                            <span class="name">Phil K</span>
+                        </button>
+                        <button onclick="remove('requesttwo');countadd('ctotal')" class="but2" type="button">
+                            <img src="./assets/accept-circle.png" class="accept" alt="Accept">
+                        </button>
+                        <button onclick="remove('requesttwo');countdown('cnum')" class="but3" type="button">
+                            <img src="./assets/close-circle.png" class="close" alt="Close">
+                        </button>
+                    </div>
+                </div>
+                <div class="connections">
+                    <div class="connecttop">
+                        <button class="contop">
+                            <span id="ctotal">500</span><span class="trequest">Your Connections</span>
+                        </button>
+                    </div>
+                    <div class="contact">
+                        <button class="but1">
+                            <img src="./assets/adrien-s.jpg" class="conimg" alt="Todd">
+                            <span class="name">Adrien D</span>
+                        </button>
+                    </div>
+                    <div class="contact">
+                        <button class="but1">
+                            <img src="./assets/anne-s.jpg" class="conimg" alt="Todd">
+                            <span class="name">Anne J</span>
+                        </button>
+                    </div>
+                    <div class="contact">
+                        <button class="but1">
+                            <img src="./assets/alayne-s.jpg" class="conimg" alt="Todd">
+                            <span class="name">Alayne T</span>
+                        </button>
+                    </div>
+                    <div class="contact">
+                        <button class="but1">
+                            <img src="./assets/arry-s.jpg" class="conimg" alt="Todd">
+                            <span class="name">Arry Y</span>
+                        </button>
+                    </div>
+                    <div class="view">
+                        <button class="but4"><span class="vm">View More</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
