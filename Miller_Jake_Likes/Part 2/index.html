@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes Part 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Network</h1>
+    </div>
+    <div id="title">
+        <h2>Your Feed</h2>
+    </div>
+    <div id="flex-container">
+        <div id="flex2">
+            <div id="profilebox">
+                <img id="img" src="./assets/user-circle.png" alt="Profile Picture">
+                <a href="https://chrome.google.com/webstore/detail/avatar-maker" id="addav">Add an avatar</a>
+                <h3 class="h3">James Doe</h3>
+            </div>
+        </div>
+        <div id="flex5">         
+            <div id="top" class="box">
+                <div class="row1">
+                    <h4 class="h4">Neil M</h4>
+                    <div class="likeandbtn">
+                        <p id="like1" class="number">9</p><span class="span">Like(s)</span>
+                        <button onclick="add1('like1')" class="button" type="button">Like</button>
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="filler">I just set up this new discord bot, let me know what you all think. <a class="link" href="https://discord.com/" target="_blank">link</a></p>
+                </div>
+            </div>
+            <div id="middle" class="box">
+                <div class="row1">
+                    <h4 class="h4">Nichole K</h4>
+                    <div class="likeandbtn">
+                        <p id="like2" class="number">9</p><span class="span">Like(s)</span>
+                        <button onclick="add1('like2')" class="button" type="button">Like</button>
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="filler">Just finished my <a class="link" href="https://www.comic-con.org/" target="_blank">next comic</a>, check it out.</p>
+                </div>
+            </div>
+            <div id="bottom" class="box">
+                <div class="row1">
+                    <h4 class="h4">Jim R</h4>
+                    <div class="likeandbtn">
+                        <p id="like3" class="number">9</p><span class="span">Like(s)</span>
+                        <button onclick="add1('like3')" class="button" type="button">Like</button>
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="filler">I can't stop listening to the <a class="link" href="https://www.google.com/search?q=new+album" target="_blank">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>
